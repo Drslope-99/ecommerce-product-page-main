@@ -1,0 +1,14 @@
+.nav {
+  height: 7rem;
+}
+
+.nav__container {
+  height: inherit;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  border-bottom: 0.15rem solid var(--gray-blue);
+  padding-inline: 2rem;
+}

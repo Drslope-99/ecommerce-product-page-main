@@ -1,0 +1,15 @@
+.main {
+  padding: 8rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+}
+
+@media (max-width: 680px) {
+  .main {
+    padding-top: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    gap: 1rem;
+  }
+}

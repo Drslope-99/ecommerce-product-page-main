@@ -1,0 +1,28 @@
+.cart {
+  position: relative;
+}
+
+.cart__btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.cart__item-indicator {
+  display: flex;
+  padding: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 2rem;
+}
