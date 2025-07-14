@@ -2,7 +2,7 @@ import "./CartItems.css";
 import cartItemImage from "../../assets/images/image-product-1-thumbnail.jpg";
 import deleteIcon from "../../assets/images/icon-delete.svg";
 
-const CartItem = ({ item }) => {
+const CartItem = ({ item, onDelete }) => {
   const multiplier = item.discount ? item.discount / 100 : 1;
   const price = item.price * multiplier;
   return (
@@ -20,7 +20,7 @@ const CartItem = ({ item }) => {
         </p>
       </div>
       <div className="item__delete">
-        <button className="item__delete-btn">
+        <button className="item__delete-btn" onClick={onDelete}>
           <img src={deleteIcon} alt="delete" />
         </button>
       </div>

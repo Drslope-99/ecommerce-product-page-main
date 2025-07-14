@@ -12,6 +12,10 @@
   border-bottom: 0.15rem solid var(--gray-blue);
 }
 
+.nav__logo {
+  margin-right: auto;
+}
+
 .nav__list {
   list-style: none;
   display: flex;
@@ -48,8 +52,22 @@
   gap: 5rem;
 }
 
+.nav__btn {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
 @media (max-width: 780px) {
   .nav__list {
+    display: none;
+  }
+}
+
+@media (min-width: 680px) {
+  .nav__btn {
     display: none;
   }
 }
