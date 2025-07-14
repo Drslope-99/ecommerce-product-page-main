@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10rem;
-  z-index: -1;
 }
 
 @media (max-width: 680px) {
