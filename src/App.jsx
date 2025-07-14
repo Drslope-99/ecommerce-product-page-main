@@ -14,6 +14,8 @@ import Button from "./components/Buttons/Button";
 import CartIcon from "./components/Cart/CartIcon";
 import CartQuantityBtn from "./components/CartQuantityBtn/CartQuantityBtn";
 import LightBox from "./components/LightBox/LightBox";
+import SideNav from "./components/NavBar/SideNav";
+import NavToggleBtn from "./components/NavBar/NavToggleBtn";
 import { productData } from "./data/product";
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
   const [showModal, setShowModal] = useState(false);
   const [cartQuantity, setCartQuantity] = useState(1);
   const [cartItems, setCartItems] = useState(null);
+  const [toggleNav, setToggleNav] = useState(false);
   const product = { ...productData };
 
   const handleToggleCart = () => {
@@ -72,7 +75,13 @@ function App() {
   return (
     <>
       <Header>
-        <NavLogo />
+        <SideNav
+          clicked={() => setToggleNav(false)}
+          isActive={toggleNav ? "active" : ""}
+        />
+        <NavLogo>
+          <NavToggleBtn onClick={() => setToggleNav(true)} />
+        </NavLogo>
         <NavLinks />
         <NavMenu>
           <CartMenu onClick={handleToggleCart} items={cartItems} />

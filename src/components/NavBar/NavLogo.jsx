@@ -1,10 +1,10 @@
 import "./NavBar.css";
 import LogoImage from "../../assets/images/logo.svg";
-import NavToggleBtn from "./NavToggleBtn";
-const NavLogo = () => {
+
+const NavLogo = ({ children }) => {
   return (
     <div className="nav__logo">
-      <NavToggleBtn />
+      {children}
       <a href="#">
         <img src={LogoImage} alt="Sneakers" />
       </a>

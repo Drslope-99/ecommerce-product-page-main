@@ -64,6 +64,53 @@
   background-color: transparent;
 }
 
+/* styles for the side nav */
+
+.sidenav {
+  width: 30rem;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  position: fixed;
+  height: 100dvh;
+  background-color: var(--white);
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: 0.3s transform;
+  overflow-x: hidden;
+}
+
+.sidenav.active {
+  transform: scaleX(1);
+}
+
+.sidenav {
+  padding: 3rem;
+}
+
+.sidenav button {
+  display: inline-block;
+  margin-bottom: 5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sidenav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidenav ul li {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
 @media (max-width: 780px) {
   .nav__list {
     display: none;
