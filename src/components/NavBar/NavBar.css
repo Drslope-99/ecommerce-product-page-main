@@ -13,7 +13,10 @@
 }
 
 .nav__logo {
-  margin-right: auto;
+  /* margin-right: auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav__list {
@@ -21,6 +24,7 @@
   display: flex;
   gap: 3rem;
   margin-right: auto;
+  /* margin-left: auto; */
   align-self: stretch;
 }
 

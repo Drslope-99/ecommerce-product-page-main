@@ -1,5 +1,9 @@
 .nav {
   height: 7rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--white);
 }
 
 .nav__container {

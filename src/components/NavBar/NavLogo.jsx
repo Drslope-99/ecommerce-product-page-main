@@ -1,10 +1,14 @@
 import "./NavBar.css";
 import LogoImage from "../../assets/images/logo.svg";
+import NavToggleBtn from "./NavToggleBtn";
 const NavLogo = () => {
   return (
-    <a href="#" className="nav__logo">
-      <img src={LogoImage} alt="Sneakers" />
-    </a>
+    <div className="nav__logo">
+      <NavToggleBtn />
+      <a href="#">
+        <img src={LogoImage} alt="Sneakers" />
+      </a>
+    </div>
   );
 };
 

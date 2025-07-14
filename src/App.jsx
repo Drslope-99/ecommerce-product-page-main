@@ -15,7 +15,6 @@ import CartIcon from "./components/Cart/CartIcon";
 import CartQuantityBtn from "./components/CartQuantityBtn/CartQuantityBtn";
 import LightBox from "./components/LightBox/LightBox";
 import { productData } from "./data/product";
-import NavToggleBtn from "./components/NavBar/NavToggleBtn";
 
 function App() {
   const [toggleCart, setToggleCart] = useState(false);
@@ -73,7 +72,6 @@ function App() {
   return (
     <>
       <Header>
-        <NavToggleBtn />
         <NavLogo />
         <NavLinks />
         <NavMenu>
