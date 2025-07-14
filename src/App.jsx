@@ -26,6 +26,12 @@ function App() {
   const [toggleNav, setToggleNav] = useState(false);
   const product = { ...productData };
 
+  const handleNavOpen = () => {
+    setShowModal(false);
+    setToggleCart(false);
+    setToggleNav(true);
+  };
+
   const handleToggleCart = () => {
     setToggleCart((show) => !show);
   };
@@ -80,7 +86,7 @@ function App() {
           isActive={toggleNav ? "active" : ""}
         />
         <NavLogo>
-          <NavToggleBtn onClick={() => setToggleNav(true)} />
+          <NavToggleBtn onClick={handleNavOpen} />
         </NavLogo>
         <NavLinks />
         <NavMenu>
