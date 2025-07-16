@@ -92,7 +92,7 @@ function App() {
         <NavMenu>
           <CartMenu onClick={handleToggleCart} items={cartItems} />
           {toggleCart && (
-            <CartListItems>
+            <CartListItems onCheckout={() => setCartItems(null)}>
               {cartItems ? (
                 <CartItem item={cartItems} onDelete={handleCartDelete} />
               ) : null}

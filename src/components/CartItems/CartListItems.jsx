@@ -1,7 +1,7 @@
 import Button from "../Buttons/Button";
 import "./CartItems.css";
 
-const CartListItems = ({ children }) => {
+const CartListItems = ({ children, onCheckout }) => {
   return (
     <div className="cartitem">
       <h3 className="cartitem__title">cart</h3>
@@ -11,7 +11,7 @@ const CartListItems = ({ children }) => {
       </div>
 
       <div className="cartitem__cta">
-        <Button>Checkout</Button>
+        <Button onClick={onCheckout}>Checkout</Button>
       </div>
     </div>
   );
